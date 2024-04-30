@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram.com</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./projectInstagram.css">
+</head>
+<body>
+    <div class="container">
+        <!-- starting nav section of instagram -->  
+        <nav>
+            <div class="navbar">
+                <div class="instagram-text-logo">
+                    <img src="https://i.postimg.cc/qMFTcDw1/instagram-text.png" id="white-color" alt="">
+                </div>
+                <div class="sub-section" id="clicked">
+                    <i class="fa-solid fa-house" ></i>
+                    <a href="#">Dark-mode</a>
+                </div>
+                <div class="sub-section" >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+                <div class="sub-section" >
+                    <i class="fa-regular fa-compass"></i>
+                    <a href="#">Explore</a>
+                </div>
+                <div class="sub-section">
+                    <i class="fa-solid fa-clapperboard"></i>
+                    <a href="#">Reels</a>
+                </div>
+                <div class="sub-section">
+                    <i class="fa-regular fa-message"></i>
+                    <a href="#">Messages</a>
+                </div>
+                <div class="sub-section" id="hidden2">
+                    <i class="fa-regular fa-heart"></i>
+                    <a href="#">Notification</a>
+                </div>
+                <div class="sub-section" id="hidden1">
+                    <i class="fa-solid fa-square-plus"></i>
+                    <a href="#">Create</a>
+                </div>
+                <div class="sub-section">
+                    <div class="profile-img">
+                        <img src="https://static.thenounproject.com/png/2265555-200.png" alt="">
+                    </div>
+                    <a href="#">Profile</a>
+                </div>
+                <div class="menu-section " id="hidden">
+                    <i class="fa-solid fa-bars"></i>
+                    <a href="#">More</a>
+                </div>
+            </div>
+
+        </nav>
+        <div class="middle-section">
+            <div class="post-section">
+                <div class="nav-hidden">
+                    <div class="nav-hidden-logo" id="white-2color">
+                        <img src="https://i.postimg.cc/qMFTcDw1/instagram-text.png" alt="">
+                    </div>
+                   <div class="nav-hide-2">
+                     <i class="fa-regular fa-heart"></i>
+                     <i class="fa-regular fa-paper-plane"></i>
+                   </div>
+                </div>
+                <div class="story-section">
+                    <div class="story">
+                        <div class="story-image">
+                            <img src="./SaketPic.jpg" alt="">
+                        </div>
+                        <span>Your story</span>
+                    </div>
+                    <div class="story">
+                        <div class="story-image">
+                            <img src="https://pbs.twimg.com/profile_images/1562753500726976514/EPSUNyR3_400x400.jpg" alt="">
+                        </div>
+                        <span>virat.kohli</span>
+                    </div>
+                    <div class="story" id="story-2">
+                        <div class="story-image">
+                            <img src="data:image/jpeg;base64,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" alt="">
+                        </div>
+                        <span>qspider_kol</span>
+                    </div>
+                    <div class="story" id="story-3">
+                        <div class="story-image"  >
+                            <img src="./samimage.jpg" alt="">
+                        </div>
+                        <span>sameer_singh</span>
+                    </div>
+                    <div class="story" id="story-4">
+                        <div class="story-image">
+                            <img src="https://www.invajy.com/wp-content/uploads/2019/12/Short-Quotes-3.jpg" alt="">
+                        </div>
+                        <span>iam_Aditya</span>
+                    </div>
+                    <div class="story" id="story-5">
+                        <div class="story-image">
+                            <img src="https://images.unsplash.com/photo-1558203728-00f45181dd84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cHJvZmlsZSUyMGltYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="">
+                        </div>
+                        <span>hey_ujju</span>
+                    </div>
+                    <div class="story" id="story-6">
+                        <div class="story-image">
+                            <img src="https://www.bollywoodkibaten.in/wp-content/uploads/2023/07/cropped-WhatsApp-Image-2023-07-10-at-18.10.08.jpeg" alt="">
+                        </div>
+                        <span>raghavjuyal</span>
+                    </div>
+                    <div class="story" id="story-7">
+                        <div class="story-image">
+                            <img src="https://plus.unsplash.com/premium_photo-1664453546896-ad5e0f895eab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="">
+                        </div>
+                        <span>hey_vp</span>
+                    </div>
+                </div>
+                <div class="post-area">
+                    <div class="post-main">
+                        <div class="post-header">
+                            <div class="post-left-header">
+                             <div class="post-image">
+                                 <img src="https://pbs.twimg.com/profile_images/1562753500726976514/EPSUNyR3_400x400.jpg" alt="">
+                             </div>
+                             <p class="post-username">
+                                virat.kohli</p>
+                            <i class="fa-solid fa-certificate"></i>
+                             <span class="one-day"> . 1h </span>
+                            </div>
+                            <i class="fa-solid fa-grip-lines"></i>
+                         </div>
+                         <div class="post-main-image">
+                            <img src="https://static.toiimg.com/photo/105936731.cms" alt="">
+                         </div>
+                         <div class="post-fotter">
+                            <div class="post-fotter-left">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-message"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                                <i class="fa-regular fa-bookmark"></i>
+                         </div>
+                         <div class="post-description">
+                                <p class="post-liked">Liked by anushkasharma and 1,81,252 others</p>
+                                <p class="title"><span>virat.kohli </span>You know you're in love when you can't fall asleep because reality is finally better than your dreams</p>
+                                <p class="comments"> view all comments</p>
+                         </div>
+                    </div>
+                    <div class="post-main">
+                        <div class="post-header">
+                            <div class="post-left-header">
+                             <div class="post-image">
+                                 <img src="https://img.etimg.com/thumb/width-640,height-480,imgsize-71606,resizemode-75,msid-104793567/news/sports/cwc-2023-skipper-rohit-sharma-set-to-raise-a-ton-of-a-different-kind-against-england-today/indias-captain-rohit-sharma.jpg" alt="">
+                             </div>
+                             <p class="post-username">
+                                rohitsharma45</p>
+                             <i class="fa-solid fa-certificate"></i>
+                             <span class="one-day"> . 1d </span>
+                            </div>
+                            <i class="fa-solid fa-grip-lines"></i>
+                         </div>
+                         <div class="post-main-image">
+                            <img src="https://static.toiimg.com/photo/104349841.cms" alt="">
+                         </div>
+                         <div class="post-fotter">
+                            <div class="post-fotter-left">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-message"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                                <i class="fa-regular fa-bookmark"></i>
+                         </div>
+                         <div class="post-description">
+                                <p class="post-liked">Liked by hey_ujju and 58,280 others</p>
+                                <p class="title"><span>
+                                    rohitsharma45 </span>It was a great night for me and my team and boys played well......<br> more</p>
+                                <p class="comments"> view all comments</p>
+                         </div>
+                    </div>
+                    <div class="post-main">
+                        <div class="post-header">
+                            <div class="post-left-header">
+                             <div class="post-image">
+                                 <img src="https://www.bollywoodkibaten.in/wp-content/uploads/2023/07/cropped-WhatsApp-Image-2023-07-10-at-18.10.08.jpeg" alt="">
+                             </div>
+                             <p class="post-username">
+                               raghavjuyal</p>
+                             <i class="fa-solid fa-certificate"></i>
+                             <span class="one-day"> . 5h </span>
+                            </div>
+                            <i class="fa-solid fa-grip-lines"></i>
+                         </div>
+                         <div class="post-main-image">
+                            <img src="https://s3images.zee5.com/wp-content/uploads/2021/11/FETt7iOXEAEUIaH20211116112020211116113321.jpg" alt=""> 
+                         </div>
+                         <div class="post-fotter">
+                            <div class="post-fotter-left">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-message"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                                <i class="fa-regular fa-bookmark"></i>
+                         </div>
+                         <div class="post-description">
+                                <p class="post-liked">Liked by sameersingh and 1,01,280 others</p>
+                                <p class="title"><span>
+                                    John Legend </span>Pal Yaad Aayenge Wo Pal!...<br> more</p>
+                                <p class="comments"> view all comments</p>
+                         </div>
+                    </div>
+                    <div class="post-main">
+                        <div class="post-header">
+                            <div class="post-left-header">
+                             <div class="post-image">
+                                 <img src="https://images.unsplash.com/photo-1567591370504-80142b28f1c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a3Jpc2huYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                             </div>
+                             <p class="post-username">
+                                Lady Gaga</p>
+                             <i class="fa-solid fa-certificate"></i>
+                             <span class="one-day"> . 5d </span>
+                            </div>
+                            <i class="fa-solid fa-grip-lines"></i>
+                         </div>
+                         <div class="post-main-image">
+                            <img src="https://images.unsplash.com/photo-1694676517357-25cd4d8f67f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60" alt="">
+                         </div>
+                         <div class="post-fotter">
+                            <div class="post-fotter-left">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-message"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                                <i class="fa-regular fa-bookmark"></i>
+                         </div>
+                         <div class="post-description">
+                                <p class="post-liked">Liked by sarasshree and others</p>
+                                <p class="title"><span>
+                                    Cardi B </span>Monsoon fury rained havoc in various parts of Himachal Pradesh this year with the death toll crossing 260. The rains...<br> more</p>
+                                <p class="comments"> view all comments</p>
+                         </div>
+                    </div>
+                    <div class="post-main">
+                        <div class="post-header">
+                            <div class="post-left-header">
+                             <div class="post-image">
+                                 <img src="https://cdn.pixabay.com/photo/2016/11/29/01/34/man-1866574_1280.jpg" alt="">
+                             </div>
+                             <p class="post-username">
+                                Nicki Minaj</p>
+                             <i class="fa-solid fa-certificate"></i>
+                             <span class="one-day"> . 1w </span>
+                            </div>
+                            <i class="fa-solid fa-grip-lines"></i>
+                         </div>
+                         <div class="post-main-image">
+                            <img src="https://images.unsplash.com/photo-1692885228334-e3cdcb9cfad7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMTh8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                         </div>
+                         <div class="post-fotter">
+                            <div class="post-fotter-left">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-message"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                                <i class="fa-regular fa-bookmark"></i>
+                         </div>
+                         <div class="post-description">
+                                <p class="post-liked">Liked by sarasshree and others</p>
+                                <p class="title"><span>
+                                    Lana Del Rey </span>A blog post title’s quality also depends on your goals. What works for increasing click-through rates might not work for social shares. And blog titles that get tons of social media shares might not be great for search engine optimization<br> more</p>
+                                <p class="comments"> view all comments</p>
+                         </div>
+                    </div>
+                    <div class="post-main">
+                        <div class="post-header">
+                            <div class="post-left-header">
+                             <div class="post-image">
+                                 <img src="https://images.unsplash.com/photo-1567591370504-80142b28f1c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a3Jpc2huYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                             </div>
+                             <p class="post-username">
+                                Lady Gaga</p>
+                             <i class="fa-solid fa-certificate"></i>
+                             <span class="one-day"> . 5d </span>
+                            </div>
+                            <i class="fa-solid fa-grip-lines"></i>
+                         </div>
+                         <div class="post-main-image">
+                            <img src="https://plus.unsplash.com/premium_photo-1675433344518-21eb72dfc7a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                         </div>
+                         <div class="post-fotter">
+                            <div class="post-fotter-left">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-message"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                                <i class="fa-regular fa-bookmark"></i>
+                         </div>
+                         <div class="post-description">
+                                <p class="post-liked">Liked by sarasshree and others</p>
+                                <p class="title"><span>
+                                    Cardi B </span>Monsoon fury rained havoc in various parts of Himachal Pradesh this year with the death toll crossing 260. The rains...<br> more</p>
+                                <p class="comments"> view all comments</p>
+                         </div>
+                    </div>
+                    <div class="post-main">
+                        <div class="post-header">
+                            <div class="post-left-header">
+                             <div class="post-image">
+                                 <img src="https://images.unsplash.com/photo-1567591370504-80142b28f1c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a3Jpc2huYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                             </div>
+                             <p class="post-username">
+                                Lady Gaga</p>
+                             <i class="fa-solid fa-certificate"></i>
+                             <span class="one-day"> . 5d </span>
+                            </div>
+                            <i class="fa-solid fa-grip-lines"></i>
+                         </div>
+                         <div class="post-main-image">
+                            <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmV3c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                         </div>
+                         <div class="post-fotter">
+                            <div class="post-fotter-left">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-message"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                                <i class="fa-regular fa-bookmark"></i>
+                         </div>
+                         <div class="post-description">
+                                <p class="post-liked">Liked by sarasshree and others</p>
+                                <p class="title"><span>
+                                    Cardi B </span>Monsoon fury rained havoc in various parts of Himachal Pradesh this year with the death toll crossing 260. The rains...<br> more</p>
+                                <p class="comments"> view all comments</p>
+                         </div>
+                    </div>
+                    <div class="post-main">
+                        <div class="post-header">
+                            <div class="post-left-header">
+                             <div class="post-image">
+                                 <img src="https://images.unsplash.com/photo-1567591370504-80142b28f1c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a3Jpc2huYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                             </div>
+                             <p class="post-username">
+                                Lady Gaga</p>
+                             <i class="fa-solid fa-certificate"></i>
+                             <span class="one-day"> . 5d </span>
+                            </div>
+                            <i class="fa-solid fa-grip-lines"></i>
+                         </div>
+                         <div class="post-main-image">
+                            <img src="https://images.unsplash.com/photo-1593376853899-fbb47a057fa0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHJvYm90fGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="">
+                         </div>
+                         <div class="post-fotter">
+                            <div class="post-fotter-left">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-message"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                                <i class="fa-regular fa-bookmark"></i>
+                         </div>
+                         <div class="post-description">
+                                <p class="post-liked">Liked by sarasshree and others</p>
+                                <p class="title"><span>
+                                    Cardi B </span>Monsoon fury rained havoc in various parts of Himachal Pradesh this year with the death toll crossing 260. The rains...<br> more</p>
+                                <p class="comments"> view all comments</p>
+                         </div>
+                    </div>
+                    <div class="post-main">
+                        <div class="post-header">
+                            <div class="post-left-header">
+                             <div class="post-image">
+                                 <img src="https://images.unsplash.com/photo-1567591370504-80142b28f1c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a3Jpc2huYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                             </div>
+                             <p class="post-username">
+                                Lady Gaga</p>
+                             <i class="fa-solid fa-certificate"></i>
+                             <span class="one-day"> . 5d </span>
+                            </div>
+                            <i class="fa-solid fa-grip-lines"></i>
+                         </div>
+                         <div class="post-main-image">
+                            <img src="https://plus.unsplash.com/premium_photo-1680807869144-9a88225849b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdpcmxzJTIwcGhvdG98ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                         </div>
+                         <div class="post-fotter">
+                            <div class="post-fotter-left">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-message"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                                <i class="fa-regular fa-bookmark"></i>
+                         </div>
+                         <div class="post-description">
+                                <p class="post-liked">Liked by sarasshree and others</p>
+                                <p class="title"><span>
+                                    Cardi B </span>Monsoon fury rained havoc in various parts of Himachal Pradesh this year with the death toll crossing 260. The rains...<br> more</p>
+                                <p class="comments"> view all comments</p>
+                         </div>
+                    </div>
+                    <div class="post-main">
+                        <div class="post-header">
+                            <div class="post-left-header">
+                             <div class="post-image">
+                                 <img src="https://images.unsplash.com/photo-1567591370504-80142b28f1c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a3Jpc2huYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                             </div>
+                             <p class="post-username">
+                                Lady Gaga</p>
+                             <i class="fa-solid fa-certificate"></i>
+                             <span class="one-day"> . 5d </span>
+                            </div>
+                            <i class="fa-solid fa-grip-lines"></i>
+                         </div>
+                         <div class="post-main-image">
+                            <img src="https://plus.unsplash.com/premium_photo-1688821124243-4c8a1bd1e285?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                         </div>
+                         <div class="post-fotter">
+                            <div class="post-fotter-left">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-message"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                                <i class="fa-regular fa-bookmark"></i>
+                         </div>
+                         <div class="post-description">
+                                <p class="post-liked">Liked by sarasshree and others</p>
+                                <p class="title"><span>
+                                    Cardi B </span>Monsoon fury rained havoc in various parts of Himachal Pradesh this year with the death toll crossing 260. The rains...<br> more</p>
+                                <p class="comments"> view all comments</p>
+                         </div>
+                    </div>
+                    <div class="post-main">
+                        <div class="post-header">
+                            <div class="post-left-header">
+                             <div class="post-image">
+                                 <img src="https://images.unsplash.com/photo-1567591370504-80142b28f1c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a3Jpc2huYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                             </div>
+                             <p class="post-username">
+                                Lady Gaga</p>
+                             <i class="fa-solid fa-certificate"></i>
+                             <span class="one-day"> . 5d </span>
+                            </div>
+                            <i class="fa-solid fa-grip-lines"></i>
+                         </div>
+                         <div class="post-main-image">
+                            <img src="https://plus.unsplash.com/premium_photo-1694941311111-05d41b8b9f34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="">
+                         </div>
+                         <div class="post-fotter">
+                            <div class="post-fotter-left">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-message"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                                <i class="fa-regular fa-bookmark"></i>
+                         </div>
+                         <div class="post-description">
+                                <p class="post-liked">Liked by sarasshree and others</p>
+                                <p class="title"><span>
+                                    Cardi B </span>Monsoon fury rained havoc in various parts of Himachal Pradesh this year with the death toll crossing 260. The rains...<br> more</p>
+                                <p class="comments"> view all comments</p>
+                         </div>
+                    </div>
+                    <div class="post-main">
+                        <div class="post-header">
+                            <div class="post-left-header">
+                             <div class="post-image">
+                                 <img src="https://images.unsplash.com/photo-1567591370504-80142b28f1c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a3Jpc2huYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                             </div>
+                             <p class="post-username">
+                                Lady Gaga</p>
+                             <i class="fa-solid fa-certificate"></i>
+                             <span class="one-day"> . 5d </span>
+                            </div>
+                            <i class="fa-solid fa-grip-lines"></i>
+                         </div>
+                         <div class="post-main-image">
+                            <img src="https://images.unsplash.com/photo-1584714268709-c3dd9c92b378?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHVybHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                         </div>
+                         <div class="post-fotter">
+                            <div class="post-fotter-left">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-message"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                                <i class="fa-regular fa-bookmark"></i>
+                         </div>
+                         <div class="post-description">
+                                <p class="post-liked">Liked by sarasshree and others</p>
+                                <p class="title"><span>
+                                    Cardi B </span>Monsoon fury rained havoc in various parts of Himachal Pradesh this year with the death toll crossing 260. The rains...<br> more</p>
+                                <p class="comments"> view all comments</p>
+                         </div>
+                    </div>
+                    <div class="post-main">
+                        <div class="post-header">
+                            <div class="post-left-header">
+                             <div class="post-image">
+                                 <img src="https://images.unsplash.com/photo-1567591370504-80142b28f1c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a3Jpc2huYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                             </div>
+                             <p class="post-username">
+                                Lady Gaga</p>
+                             <i class="fa-solid fa-certificate"></i>
+                             <span class="one-day"> . 5d </span>
+                            </div>
+                            <i class="fa-solid fa-grip-lines"></i>
+                         </div>
+                         <div class="post-main-image">
+                            <img src="https://images.unsplash.com/photo-1598128558393-70ff21433be0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXJsfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="">
+                         </div>
+                         <div class="post-fotter">
+                            <div class="post-fotter-left">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-message"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                                <i class="fa-regular fa-bookmark"></i>
+                         </div>
+                         <div class="post-description">
+                                <p class="post-liked">Liked by sarasshree and others</p>
+                                <p class="title"><span>
+                                    Cardi B </span>Monsoon fury rained havoc in various parts of Himachal Pradesh this year with the death toll crossing 260. The rains...<br> more</p>
+                                <p class="comments"> view all comments</p>
+                         </div>
+                    </div>
+                </div>
+           </div>
+           <div class="follow-section">
+                <div class="profile-follow profile-foolow-hovering">
+                    <div class="profile-follow-left">
+                        <div class="profile-follow-image">
+                            <img src="./SaketPic.jpg" alt="">
+                        </div>
+                        <div class="profile-follow-content">
+                            <p class="profile-id">saketarya__</p>
+                            <p class="profile-name">Saket Mishra | Full Stack Developer</p>
+                        </div>
+                    </div>
+                    <a href="#" class="follow">switch</a>
+                </div>
+                 <div class="suggestion-follow">
+                    <p class="suggestion">Suggested for you</p>
+                    <a href="#" class="see-all">see all</a>
+                 </div>
+                 <div class="profile-follow profile-foolow-hovering">
+                    <div class="profile-follow-left">
+                        <div class="profile-follow-image">
+                            <img src="https://media.istockphoto.com/id/1388253782/photo/positive-successful-millennial-business-professional-man-head-shot-portrait.webp?b=1&s=612x612&w=0&k=20&c=VsTsa0kjyZ7ALe-nyKAUfynyRxZo8H4LRMdu_ecPuOY=" alt="">
+                        </div>
+                        <div class="profile-follow-content">
+                            <p class="profile-id">Anuj Mishra</p>
+                            <p class="profile-name">Followed by deepaksingh_12</p>
+                        </div>
+                    </div>
+                    <a href="#" class="follow">follow</a>
+                </div>
+                <div class="profile-follow profile-foolow-hovering">
+                    <div class="profile-follow-left">
+                        <div class="profile-follow-image">
+                            <img src="https://cdn.pixabay.com/photo/2022/09/08/15/16/cute-7441224_640.jpg" alt="">
+                        </div>
+                        <div class="profile-follow-content">
+                            <p class="profile-id">Vikash Kumar</p>
+                            <p class="profile-name">Followed by hey_vp + 3 more
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#" class="follow">follow</a>
+                </div>
+                <div class="profile-follow profile-foolow-hovering">
+                    <div class="profile-follow-left">
+                        <div class="profile-follow-image">
+                            <img src="https://i.pinimg.com/736x/7f/67/0b/7f670beeea34360268286ae766cfd167.jpg" alt="">
+                        </div>
+                        <div class="profile-follow-content">
+                            <p class="profile-id">Deepak Dabang</p>
+                            <p class="profile-name">Suggested for you
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#" class="follow">follow</a>
+                </div>
+                <div class="profile-follow profile-foolow-hovering">
+                    <div class="profile-follow-left">
+                        <div class="profile-follow-image">
+                            <img src="https://img.freepik.com/free-photo/man-white_1368-3544.jpg" alt="">
+                        </div>
+                        <div class="profile-follow-content">
+                            <p class="profile-id">Hamza_noor</p>
+                            <p class="profile-name">Followed by aniket_45
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#" class="follow">follow</a>
+                </div>
+                <div class="profile-follow profile-foolow-hovering">
+                    <div class="profile-follow-left">
+                        <div class="profile-follow-image">
+                            <img src=" https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small/user-profile-icon-free-vector.jpg" alt="">
+                        </div>
+                        <div class="profile-follow-content">
+                            <p class="profile-id">Sonu Kumar</p>
+                            <p class="profile-name">New to Instagram</p>
+                        </div>
+                    </div>
+                    <a href="#" class="follow">follow</a>
+                </div>
+                <p class="copyrights"> @All rights reserved by saket</p>
+           </div>
+        </div>
+
+</div>
+<img id="plusimage" src="https://cdn-icons-png.flaticon.com/512/992/992482.png" alt="">
+    <script src="./ProjetInstagram.js"></script>
+</body>
+</html>
